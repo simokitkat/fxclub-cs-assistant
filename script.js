@@ -20,7 +20,7 @@ function sendMessage() {
     model: "llama3-8b-8192", // Example model, replace with your actual model if different
   };
 
-  fetch("http://localhost:3000/get-groq-chat-completion", {
+  fetch("https://fxclub-cs-assistant.onrender.com/get-groq-chat-completion", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
