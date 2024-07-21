@@ -27,6 +27,14 @@ export default function MainNavigation() {
                 Link Decoder
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/ai-assistant"
+                className={({ isActive }) => (isActive ? classes.active : "")}
+              >
+                AI Assistant
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </div>

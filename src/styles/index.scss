@@ -5,3 +5,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 166, 0, 0.1),
+    rgba(255, 166, 0, 0.2),
+    rgba(255, 166, 0, 0.3),
+    rgba(255, 166, 0, 0.4),
+    rgba(255, 166, 0, 0.5)
+  );
+  min-height: 100vh;
+}
