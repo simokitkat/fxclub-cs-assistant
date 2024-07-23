@@ -1,3 +1,9 @@
+import AIAssistant from "../components/AIAssistant/AIAssistant";
+
 export default function AIAssistantPage() {
-  return <div>Coming soon...</div>;
+  return (
+    <>
+      <AIAssistant />
+    </>
+  );
 }

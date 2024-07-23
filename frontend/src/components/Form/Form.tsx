@@ -19,15 +19,23 @@ export default function Form({
   return (
     <form onSubmit={(e) => onSubmit(e)}>
       {isAI && (
-        <select name="model">
-          {aiModels.map((model) => {
-            return (
-              <option value={model} key={model}>
-                {model}
-              </option>
-            );
-          })}
-        </select>
+        <div className="settings">
+          <select name="language">
+            <option value="english">English</option>
+            <option value="russian">Russian</option>
+            <option value="uzbek">Uzbek</option>
+          </select>
+
+          <select name="model" defaultValue="llama3-70b-8192">
+            {aiModels.map((model) => {
+              return (
+                <option value={model} key={model}>
+                  {model}
+                </option>
+              );
+            })}
+          </select>
+        </div>
       )}
       <textarea
         name={name}
