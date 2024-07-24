@@ -7,16 +7,7 @@ export function askAI(
   setAiAnswer: (aiAnswer: string) => void
 ) {
   // Prepare the request payload
-  // const data = {
-  //   messages: [
-  //     {
-  //       role: "user",
-  //       content: question,
-  //     },
-  //   ],
-  //   model: aiModel,
-  // };
-  const data = requestPayload(language, question, aiModel);
+  const data = requestPayload(question, aiModel, language);
 
   fetch("https://fxclub-cs-assistant.onrender.com/get-groq-chat-completion", {
     method: "POST",
@@ -47,7 +38,12 @@ function requestPayload(question: string, aiModel: string, language: string) {
     messages: [
       {
         role: "system",
-        content: systemPrompts[language],
+        content:
+          language === "uzbek"
+            ? systemPrompts.uzbek
+            : language === "russian"
+            ? systemPrompts.russian
+            : systemPrompts.english,
       },
       {
         role: "user",

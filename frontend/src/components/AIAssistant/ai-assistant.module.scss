@@ -1,0 +1,78 @@
+.ai-assistant {
+  padding: 1rem;
+
+  .container {
+    padding-top: 3rem;
+
+    pre {
+      display: block;
+      background-color: whitesmoke;
+      padding: 1rem;
+      padding-top: 2rem;
+      width: 900px;
+      margin: auto;
+      text-wrap: wrap;
+      font-size: 1rem;
+      font-weight: 500;
+      position: relative;
+      border-radius: 10px;
+
+      button {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 2px solid orange;
+        background-color: white;
+      }
+    }
+  }
+}
+
+form {
+  .settings {
+    height: 100px;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: flex-start;
+
+    select {
+      width: 200px;
+      font-size: 1.2rem;
+    }
+  }
+
+  textarea {
+    width: 500px;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid orange;
+    border-radius: 10px;
+  }
+
+  button[type="submit"] {
+    display: block;
+    margin: 1rem auto 2rem;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: 2px solid orange;
+    background-color: white;
+    border-radius: 10px;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: orange;
+      color: white;
+      border-color: white;
+    }
+  }
+}

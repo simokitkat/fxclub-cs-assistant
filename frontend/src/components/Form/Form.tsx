@@ -1,5 +1,5 @@
 import React from "react";
-import { aiModels } from "../../utils/aiModels";
+import AISettings from "./AISettings";
 
 interface FormProps {
   submitText: string;
@@ -18,25 +18,7 @@ export default function Form({
 }: FormProps) {
   return (
     <form onSubmit={(e) => onSubmit(e)}>
-      {isAI && (
-        <div className="settings">
-          <select name="language">
-            <option value="english">English</option>
-            <option value="russian">Russian</option>
-            <option value="uzbek">Uzbek</option>
-          </select>
-
-          <select name="model" defaultValue="llama3-70b-8192">
-            {aiModels.map((model) => {
-              return (
-                <option value={model} key={model}>
-                  {model}
-                </option>
-              );
-            })}
-          </select>
-        </div>
-      )}
+      {isAI && <AISettings />}
       <textarea
         name={name}
         placeholder={placeHolderText}
