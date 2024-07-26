@@ -10,6 +10,7 @@ As a customer support agent, I created the FXclub CS Assistant to simplify my ow
   - [Features](#features)
   - [Notes](#notes)
   - [Screenshot](#screenshot)
+  - [How to use](#how-to-use)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -32,6 +33,11 @@ Users should be able to:
 ### Screenshot
 
 ![FXclub CS Assistant screenshot](image.png)
+
+### How to use
+
+- **Link Decoder**: ![Link Decoder Usage Example](./linkDecoder.gif)
+- **AI Assistant**: ![AI Assistant Usage Example](./aiAssistant.gif)
 
 ### Links
 
