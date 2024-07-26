@@ -29,6 +29,8 @@ Users should be able to:
 
 - The website isn't responsive. The reason for that is that we work on laptops only so I didn't find a reason to make it responsive on mobile and other devices.
 - The backend is hosted on a free render.com server which means that if you leave the chat for a while and then try to type a prompt, it may take about 30 seconds to respond, but after that it will be responding faster if you keep on using it actively during the day.
+- Some of the AI models may not translate the conent 100% accuratetly, but they all work perfectly fine in English. I'd recommend regenrating the answer if you see weird symbols or incorrect translation in it.
+- The Best model is the highest in the list. The lower the Paramaeters the model accepts, the worse its answers quality might be. I recommend using gemma2-9b-it or llama3-70b-8192.
 
 ### Screenshot
 
