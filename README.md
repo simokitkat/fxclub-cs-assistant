@@ -37,7 +37,7 @@ Users should be able to:
 ### How to use
 
 - **Link Decoder**: ![Link Decoder Usage Example](./linkDecoder.gif)
-- **AI Assistant**: ![AI Assistant Usage Example](./aiAssistant.gif)
+- **AI Assistant**: ![AI Assistant Usage Example](./AIAssistant.gif)
 
 ### Links
 
